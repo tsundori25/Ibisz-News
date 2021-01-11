@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blooger</title>
+
+    <script src="js/push.min.js"></script>
+    <script src="js/serviceWorker.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+
+    <!-- ------------------------------- FONT AWESOME ------------------------------- -->
+    <link rel="stylesheet" href="./css/all.css" />
+
+    <!--  ------------------------------ OWL CAROUSEL --------------------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+    <!---------------------------------- STYLE ------------------------------------------>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ---------------------------NAVIGATION------------------------------ -->
+
+    <nav class="nav">
+      <div class="nav-menu flex-row">
+        <div class="nav-brand">
+          <a href="#" class="text">Ibisz News</a>
+        </div>
+        <div class="toggle-collapse">
+          <div class="toggle-icons">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div>
+          <ul class="nav-items">
+            <li class="nav-link">
+              <a href="#home">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#category">Category</a>
+            </li>
+            <li class="nav-link">
+              <a href="#popular">Popular</a>
+            </li>
+            <li class="nav-link">
+              <a href="#tags">Tags</a>
+            </li>
+            <li class="nav-link">
+              <a href="#follow">Follow</a>
+            </li>
+            <li class="nav-link">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social text">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a href="https://twitter.com/login?lang=id" target="_blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fab fa-youtube-square"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---------------------------- HOMEPAGE ------------------------------- -->
+
+    <main>
+      <section class="site-title" id="home">
+        <div class="site-background">
+          <h1>Welcome to Ibisz News</h1>
+          <h3>Happy and Enjoined</h3>
+        </div>
+      </section>
+
+      <!-- ----------------------------- BLOG CAROUSEL----------------------------- -->
+
+      <section>
+        <div class="blog">
+          <div class="container">
+            <div class="owl-carousel owl-theme blog-post">
+              <div class="blog-content">
+                <img src="./image/carousel-post/1.jpeg" alt="1" />
+                <div class="blog-title">
+                  <a
+                    href="https://www.cnbcindonesia.com/news/20200910193558-4-185993/ini-bukti-orang-masih-seram-naik-pesawat-saat-pandemi-corona"
+                    target="_blank"
+                  >
+                    Ini Bukti Orang Masih Seram Naik Pesawat Saat Pandemi Corona
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/2.jpeg" alt="2" />
+                <div class="blog-title">
+                  <a
+                    href="https://hot.detik.com/celeb/d-5168430/bintang-the-avengers-yang-juga-bond-girl-diana-rigg-meninggal-dunia?tag_from=wp_nhl_17&_ga=2.50860777.1974748052.1599585526-434673850.1599585526"
+                    target="_blank"
+                  >
+                    Bintang The Avengers yang Juga Bond Girl, Diana Rigg
+                    Meninggal Dunia
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/3.webp" alt="3" />
+                <div class="blog-title">
+                  <a
+                    href="https://hot.liputan6.com/read/4352571/6-cara-budi-daya-ikan-lele-perhatikan-langkahnya"
+                    target="_blank"
+                    >6 Cara Budi Daya Ikan Lele, Perhatikan Langkahnya</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/4.webp" alt="4" />
+                <div class="blog-title">
+                  <a
+                    href="https://hot.liputan6.com/read/4352473/12-manfaat-clay-mask-untuk-kecantikan-bersihkan-kulit"
+                    target="_blank"
+                    >12 Manfaat Clay Mask untuk Kecantikan, Bersihkan Kulit</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/5.jpg" alt="5" />
+                <div class="blog-title">
+                  <a
+                    href="https://hot.liputan6.com/read/4352233/yopie-latul-meninggal-dunia-saat-positif-covid-19-ini-5-faktanya"
+                    target="_blank"
+                  >
+                    Yopie Latul Meninggal Dunia Saat Positif Covid-19, Ini 5
+                    Faktanya
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/6.webp" alt="6" />
+                <div class="blog-title">
+                  <a
+                    href="https://hot.liputan6.com/read/4352195/harga-pajero-sport-dan-spesifikasi-teknis-lengkapnya"
+                    target="_blank"
+                  >
+                    Harga Pajero Sport dan Spesifikasi Teknis Lengkapnya
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/7.webp" alt="7" />
+                <div class="blog-title">
+                  <a
+                    href="https://hot.liputan6.com/read/4352180/penuh-keceriaan-ini-6-gaya-natasha-wilona-saat-pemotretan-dengan-sepatu-roda"
+                    target="_blank"
+                  >
+                    Penuh Keceriaan, Ini 6 Gaya Natasha Wilona saat Pemotretan
+                    dengan Sepatu Roda
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/8.webp" alt="8" />
+                <div class="blog-title">
+                  <a
+                    href="https://hot.liputan6.com/read/4352016/8-manfaat-bernyanyi-bagi-kesehatan-mental-cegah-stres"
+                    target="_blank"
+                  >
+                    8 Manfaat Bernyanyi bagi Kesehatan Mental, Cegah Stres
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/9.webp" alt="9" />
+                <div class="blog-title">
+                  <a
+                    href="https://www.liputan6.com/bola/read/4352840/ingin-masuk-2-besar-musim-depan-mu-harus-dukung-solskjaer"
+                    target="_blank"
+                  >
+                    Ingin Masuk 2 Besar Musim Depan, MU Harus Dukung Solskjaer
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/10.webp" alt="10" />
+                <div class="blog-title">
+                  <a
+                    href="https://www.liputan6.com/showbiz/read/4352677/jerinx-sid-walk-out-dari-sidang-online-kenapa"
+                    target="_blank"
+                  >
+                    Jerinx SID Walk Out dari Sidang Online, Kenapa?
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/11.jpg" alt="11" />
+                <div class="blog-title">
+                  <a
+                    href="https://www.liputan6.com/showbiz/read/4352482/aktris-bollywood-rhea-chakraborty-ditangkap-soal-narkoba-usai-3-hari-diinterogasi"
+                    target="_blank"
+                  >
+                    Aktris Bollywood Rhea Chakraborty Ditangkap soal Narkoba
+                    Usai 3 Hari Diinterogasi
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/12.webp" alt="12" />
+                <div class="blog-title">
+                  <a
+                    href="https://www.liputan6.com/disabilitas/read/4347292/brendan-lawlor-dipastikan-jadi-pegolf-difabel-pertama-di-bawah-perusahaan-niall-horan"
+                    target="_blank"
+                  >
+                    Brendan Lawlor Dipastikan Jadi Pegolf Difabel Pertama di
+                    Bawah Perusahaan Niall Horan
+                  </a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/13.webp" alt="13" />
+                <div class="blog-title">
+                  <a
+                    href="https://www.liputan6.com/disabilitas/read/4345604/6-fakta-pahlawan-tunanetra-penemu-huruf-braille"
+                    target="_blank"
+                    >6 Fakta Pahlawan Tunanetra Penemu Huruf Braille</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/14.webp" alt="14" />
+                <div class="blog-title">
+                  <a
+                    href="https://www.liputan6.com/regional/read/4352192/ancaman-pidana-untuk-pelanggar-protokol-kesehatan-di-sumbar?medium=Headline&campaign=Headline_click_1"
+                    target="_blank"
+                    >Ancaman Pidana untuk Pelanggar Protokol Kesehatan di
+                    Sumbar</a
+                  >
+                </div>
+              </div>
+              <div class="blog-content">
+                <img src="./image/carousel-post/15.webp" alt="15" />
+                <div class="blog-title">
+                  <a
+                    href="https://www.liputan6.com/regional/read/4352257/kerap-mengejek-paman-dan-keponakan-tewas-ditusuk-satpam-di-padang"
+                    target="_blank"
+                    >Kerap Mengejek, Paman dan Keponakan Tewas Ditusuk Satpam di
+                    Padang</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------------------------- SITE CONTENT ----------------------------------- -->
+
+      <section class="container">
+        <div class="site-content">
+          <div class="posts">
+            <div class="post-content">
+              <div class="post-image">
+                <div>
+                  <img
+                    src="./image/main-post/63f69443-fd32-4899-a4f7-f71ee25de36a_43.jpeg"
+                    class="img"
+                    alt="post-1"
+                  />
+                </div>
+              </div>
+              <div class="post-title">
+                <a
+                  href="https://hot.detik.com/spotlight/d-4965774/perlawanan-money-heist-di-aksi-protes-puerto-rico-sampai-indonesia?_ga=2.53279208.1974748052.1599585526-434673850.1599585526"
+                  target="_blank"
+                  >Perlawanan 'Money Heist' di Aksi Protes Puerto Rico sampai
+                  Indonesia</a
+                >
+                <p>
+                  Di episode 3, The Professor memberi tahu para anggotanya
+                  tentang bagaimana kostum itu digunakan dalam protes di seluruh
+                  dunia.<br /><br />
+                  Dia menyebutkan aksi protes itu terjadi di tempat-tempat
+                  seperti Rio de Janeiro, Buenos Aires, Kolombia, Roma, Paris,
+                  Hamburg, dan Arab Saudi.<br />
+                  'Money Heist' sendiri hanyalah serial berdasar cerita fiksi
+                  dan tak mengadaptasi dari kejadian nyata.
+                </p>
+                <span>Minggu, 05 Apr 2020 12:27 WIB</span>
+              </div>
+            </div>
+            <hr />
+            <div class="post-content">
+              <div class="post-image">
+                <div>
+                  <img
+                    src="./image/main-post/9c81d536-f453-4283-909c-99a7c17f519c_169.jpeg"
+                    class="img"
+                    alt="post-2"
+                  />
+                </div>
+              </div>
+              <div class="post-title">
+                <a
+                  href="https://hot.detik.com/movie/d-5165808/7-film-psikopat-terbaik-dan-tersadis?_ga=2.80223959.1974748052.1599585526-434673850.1599585526"
+                  target="_blank"
+                  >7 Film Psikopat Terbaik dan Tersadis</a
+                >
+                <p>
+                  Akhir-akhir ini drama Korea bertema psikopat banyak menghiasi
+                  layar kaca. Bagi yang tidak suka drama Korea, detikers bisa
+                  menonton film psikopat.
+                  <br /><br />
+                  Film psikopat banyak diminati sebagian pecinta film. Film ini
+                  menantang keberanian dan selalu membuat penasaran kisah
+                  akhirnya. Untuk yang belum tahu, psikopat adalah orang yang
+                  karena kelainan jiwa. Ciri-cirinya yakni memiliki perilaku
+                  yang menyimpang sehingga mengalami kesulitan dalam pergaulan.
+                </p>
+                <span>Rabu, 09 Sep 2020 18:05 WIB</span>
+              </div>
+            </div>
+            <hr />
+            <div class="post-content">
+              <div class="post-image">
+                <div>
+                  <img
+                    src="./image/main-post/muncul-tanda-tanda-ini-di-wajahmu-ada-skincare-yang-tidak-cocok-di-wajah_169.jpeg"
+                    class="img"
+                    alt="post-3"
+                  />
+                </div>
+              </div>
+              <div class="post-title">
+                <a
+                  href="https://www.beautynesia.id/berita-skincare/muncul-tanda-tanda-ini-di-wajahmu-ada-skincare-yang-tidak-cocok-ladies/b-160975"
+                  target="_blank"
+                  >Muncul Tanda-Tanda Ini di Wajahmu? Ada Skincare yang Tidak
+                  Cocok Ladies!</a
+                >
+                <p>
+                  Kebutuhan akan merawat kulit wajah alias skincare seakan tidak
+                  bisa lepas dari keseharian wanita. Ragam jenis skincare
+                  bermunculan dan menawarkan solusi atas permasalahan kulit
+                  serta kandungan ingredients yang lebih banyak dieksplorasi.
+                  <br /><br />
+                  Dengan klaim-klaimnya, tidak sedikit yang penasaran ingin
+                  mencoba. Tapi, belum tentu skincare kekinian bisa cocok di
+                  kulit setiap orang.
+                  <br /><br />
+                  Jika ada hal berikut muncul di wajahmu, ada kemungkinan
+                  skincare yang kamu gunakan tidak cocok di wajah.
+                </p>
+                <span>Annisa Balqis | Kamis, 10 Sep 2020 12:30 WIB</span>
+              </div>
+            </div>
+            <hr />
+            <div class="post-content">
+              <div class="post-image">
+                <div>
+                  <img
+                    src="./image/main-post/lebih-menghargai-kerja-kerasfreepikcom_169.jpeg"
+                    class="img"
+                    alt="post-4"
+                  />
+                </div>
+              </div>
+              <div class="post-title">
+                <a
+                  href="https://www.beautynesia.id/berita-others/hati-hati-ini-kebiasaan-yang-membuat-hari-kamu-tidak-produktif/b-161114"
+                  target="_blank"
+                  >Hati-Hati! Ini Kebiasaan yang Membuat Hari Kamu Tidak
+                  Produktif</a
+                >
+                <p>
+                  Kebanyakan orang mengharapkan dirinya agar dapat menjalani
+                  hari dengan produktif. Mengerjakan pekerjaan yang sudah lama
+                  ingin dikerjakan, mempelajari hal baru, hingga menyelesaikan
+                  pekerjaan rumah. Namun kebanyakan keinginan hanya berujung
+                  pada ketidakproduktifan. Biasanya niat baik ini tidak
+                  terlaksana karena terhalang rasa malas luar biasa yang
+                  menyelimuti diri sendiri.
+                  <br /><br />
+                  Meskipun sibuk, tingkat produktif tiap orang berbeda lho.
+                  Namun ada beberapa kebiasaan yang membuat hari menjadi tidak
+                  produktif sebagai berikut ini.
+                </p>
+                <span>Astari Dewi Larasati | Kamis, 10 Sep 2020 12:00 WIB</span>
+              </div>
+            </div>
+          </div>
+          <aside class="sidebar">
+            <!-- -------------------------------- FORM LOGIN ------------------------------------ -->
+            <section class="login" id="login">
+              <div class="head">
+                <h1 class="company">Ibisz News</h1>
+              </div>
+              <p class="msg">LOGIN</p>
+              <div class="form">
+                <form>
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    class="text"
+                    id="username"
+                    required
+                  /><br />
+                  <input
+                    type="password"
+                    placeholder="••••••••••••••"
+                    class="password"
+                  /><br />
+                  <a href="#" class="btn-login" id="do-login">Login</a>
+                  <a href="#" class="forgot">Forgot?</a>
+                </form>
+              </div>
+            </section>
+            <hr />
+
+            <!-- -------------------------- POPULAR POST -------------------------------- -->
+
+            <div class="popular-post" id="popular">
+              <h2>Popular Post</h2>
+              <div class="post-content">
+                <div class="post-image">
+                  <div>
+                    <img
+                      src="./image/popular-post/valentino-rossi-motogp_169.jpeg"
+                      class="img"
+                      alt="post-1"
+                    />
+                  </div>
+                </div>
+                <div class="post-title">
+                  <span>Kamis, 10 Sep 2020 11:26 WIB</span><br /><br />
+                  <a
+                    href="https://oto.detik.com/otosport/d-5167151/motogp-san-marino-balapan-kandang-dua-kali-rossi-bisa-podium?_ga=2.53850856.1974748052.1599585526-434673850.1599585526"
+                    target="_blank"
+                    >MotoGP San Marino: Balapan Kandang Dua Kali, Rossi Bisa
+                    Podium?</a
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="post-content">
+                <div class="post-image">
+                  <div>
+                    <img
+                      src="./image/popular-post/9fcdbc83-dcb6-473e-9def-d62b19822eb9.jpeg"
+                      class="img"
+                      alt="post-2"
+                    />
+                  </div>
+                </div>
+                <div class="post-title">
+                  <span>Selasa, 04 Feb 2020 21:25 WIB</span><br /><br />
+                  <a
+                    href="https://sport.detik.com/fotosport/d-4886100/pebalap-muda-ahrs-siap-harumkan-nama-indonesia?_ga=2.53939816.1974748052.1599585526-434673850.1599585526#main"
+                    target="_blank"
+                    >Pebalap Muda AHRS Siap Harumkan Nama Indonesia</a
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="post-content">
+                <div class="post-image">
+                  <div>
+                    <img
+                      src="./image/popular-post/honda-super-cub-listrik_169.png"
+                      class="img"
+                      alt="post-3"
+                    />
+                  </div>
+                </div>
+                <div class="post-title">
+                  <span>Kamis, 10 Sep 2020 09:34 WIB</span><br /><br />
+                  <a
+                    href="https://oto.detik.com/berita/d-5166980/sejauh-apa-kolaborasi-honda-yamaha-suzuki-dan-kawasaki-soal-motor-listrik?_ga=2.46649703.1974748052.1599585526-434673850.1599585526"
+                    target="_blank"
+                  >
+                    Sejauh Apa Kolaborasi Honda, Yamaha, Suzuki, dan Kawasaki
+                    Soal Motor Listrik?</a
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="post-content">
+                <div class="post-image">
+                  <div>
+                    <img
+                      src="./image/popular-post/nella-kharisma-dan-dory-harsa-4_43.jpeg"
+                      class="img"
+                      alt="post-4"
+                    />
+                  </div>
+                </div>
+                <div class="post-title">
+                  <span>Kamis, 10 Sep 2020 07:11 WIB</span><br /><br />
+                  <a
+                    href="https://hot.detik.com/celeb/d-5166899/nella-kharisma-dan-dory-harsa-diam-diam-sudah-resmi-menikah?_ga=2.46665319.1974748052.1599585526-434673850.1599585526"
+                    target="_blank"
+                    >Nella Kharisma dan Dory Harsa Diam-diam Sudah Resmi
+                    Menikah!</a
+                  >
+                </div>
+              </div>
+              <hr />
+              <div class="post-content">
+                <div class="post-image">
+                  <div>
+                    <img
+                      src="./image/popular-post/a2437c3f-1fd5-41b3-997f-67dcbba2822b.jpeg"
+                      class="img"
+                      alt="post-5"
+                    />
+                  </div>
+                </div>
+                <div class="post-title">
+                  <span>Rabu, 09 Sep 2020 11:17 WIB</span><br /><br />
+                  <a
+                    href="https://hot.detik.com/celeb/d-5165449/shandy-aulia-hot-mom-yang-sedang-disorot"
+                    target="_blank"
+                    >Shandy Aulia, Hot Mom yang Sedang Disorot</a
+                  >
+                </div>
+              </div>
+              <hr />
+            </div>
+
+            <!--------------------------------------- CATEGORY ------------------------------------- -->
+
+            <div class="category" id="category">
+              <h2>Category</h2>
+              <ul class="category-list">
+                <li class="list-items">
+                  <a
+                    href="https://www.indozone.id/tech/qEsj06E/pengertian-software-fungsi-jenis-dan-contoh-software-pada-komputer"
+                    target="_blank"
+                    >Software</a
+                  >
+                  <span>(05)</span>
+                </li>
+                <li class="list-items">
+                  <a href="https://www.tokopedia.com/" target="_blank"
+                    >Shopping</a
+                  >
+                  <span>(03)</span>
+                </li>
+                <li class="list-items">
+                  <a href="https://store.steampowered.com/" target="_blank"
+                    >Game</a
+                  >
+                  <span>(15)</span>
+                </li>
+                <li class="list-items">
+                  <a href="https://www.food.com/" target="_blank">Food</a>
+                  <span>(08)</span>
+                </li>
+                <li class="list-items">
+                  <a
+                    href="https://www.cnbcindonesia.com/lifestyle"
+                    target="_blank"
+                    >Lifestyle</a
+                  >
+                  <span>(05)</span>
+                </li>
+                <li class="list-items">
+                  <a
+                    href="https://www.cnnindonesia.com/teknologi"
+                    target="_blank"
+                    >Technology</a
+                  >
+                  <span>(04)</span>
+                </li>
+                <li class="list-items">
+                  <a
+                    href="https://www.nationalgeographic.com/travel/"
+                    target="_blank"
+                    >Travel</a
+                  >
+                  <span>(22)</span>
+                </li>
+                <li class="list-items">
+                  <a
+                    href="https://www.vibbidi.net/landing?gclid=Cj0KCQjw-uH6BRDQARIsAI3I-Ue94hYMdI9HMeuOVdtUbG2-rPM6wnXrFl6TlpAgB8dawHh6TUePnLEaAtHJEALw_wcB"
+                    target="_blank"
+                    >Music</a
+                  >
+                  <span>(18)</span>
+                </li>
+              </ul>
+              <hr />
+            </div>
+
+            <!-- ------------------------------------- POPULAR TAGS  ---------------------------------- -->
+
+            <div class="popular-tags" id="tags">
+              <h2>Tags</h2>
+              <div class="tags flex-row">
+                <span class="tag"
+                  ><a
+                    href="https://www.softwaretestinghelp.com/software-development-tools/"
+                    target="_blank"
+                    >Software</a
+                  ></span
+                >
+                <span class="tag"
+                  ><a
+                    href="https://www.netflix.com/id/title/80026506"
+                    target="_blank"
+                    >Love</a
+                  ></span
+                >
+                <span class="tag"
+                  ><a href="https://indonesiatraveler.id/" target="_blank"
+                    >Travel</a
+                  ></span
+                >
+                <span class="tag"
+                  ><a
+                    href="https://www.google.com/search?q=design+ui+ux&safe=strict&sxsrf=ALeKk024Bx08m_y7t8jan1SXi7tnPW2BsQ:1599797928983&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj3zZPan-DrAhXWXCsKHZkWDjAQ_AUoAXoECBYQAw&biw=1360&bih=654"
+                    target="_blank"
+                    >Design</a
+                  ></span
+                >
+                <span class="tag"
+                  ><a
+                    href="https://www.google.com/search?q=lifestyle&source=lmns&tbm=nws&bih=654&biw=1360&safe=strict&hl=id&sa=X&ved=2ahUKEwjt58esoODrAhXLi0sFHYsHCicQ_AUoA3oECAEQAw"
+                    target="_blank"
+                    >Lifestyle</a
+                  ></span
+                >
+                <span class="tag"
+                  ><a
+                    href="https://www.liputan6.com/tag/teknologi-canggih"
+                    target="_blank"
+                    >Technology</a
+                  ></span
+                >
+                <span class="tag"
+                  ><a href="http://www.eodigitalphoto.com/" target="_blank"
+                    >Photography</a
+                  ></span
+                >
+                <span class="tag"
+                  ><a
+                    href="https://www.acronis.com/en-us/cyber-protection/?gclid=CjwKCAjwnef6BRAgEiwAgv8mQVvD4t5Ko6hugWIqhOkf4za5Vva-8IBHWkrF9f6G4NnrllBudCMmDhoCtBYQAvD_BwE"
+                    target="_blank"
+                    >Cyber Protect</a
+                  ></span
+                >
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- ------------------------------------- BOTTOM NEWS ------------------------------- -->
+    <section class="bottom-news">
+      <hr />
+      <div class="container-news">
+        <div class="post-news">
+          <div class="post-image">
+            <div>
+              <img src="./image/news-bottom/1.jpeg" class="img" alt="post-1" />
+            </div>
+          </div>
+          <div class="news-title">
+            <a
+              href="https://hot.detik.com/celeb/d-5165512/kisah-cristiano-ronaldo-jatuh-cinta-dengan-georgina-saat-jadi-pramuniaga?tag_from=wp_beritautama&_ga=2.251657670.1974748052.1599585526-434673850.1599585526"
+              target="_blank"
+              target="_blank"
+              >Kisah Cristiano Ronaldo Jatuh Cinta dengan Georgina saat Jadi
+              Pramuniaga
+            </a>
+            <br />
+            <br />
+            <span>Rabu, 09 Sep 2020 12:42 WIB</span>
+          </div>
+        </div>
+        <div class="post-news">
+          <div class="post-image">
+            <div>
+              <img src="./image/news-bottom/2.jpeg" class="img" alt="post-2" />
+            </div>
+          </div>
+          <div class="news-title">
+            <a
+              href="https://hot.detik.com/kdrama/d-5165581/gong-yoo-hingga-bae-doona-bintangi-serial-netflix-the-sea-of-silence?tag_from=wp_nhl_4&_ga=2.50666857.1974748052.1599585526-434673850.1599585526"
+              target="_blank"
+              target="_blank"
+              >Gong Yoo hingga Bae Doona Bintangi Serial Netflix The Sea of
+              Silence
+            </a>
+            <br />
+            <br />
+            <span>Rabu, 09 Sep 2020 12:42 WIB</span>
+          </div>
+        </div>
+        <div class="post-news">
+          <div class="post-image">
+            <div>
+              <img src="./image/news-bottom/3.jpeg" class="img" alt="post-3" />
+            </div>
+          </div>
+          <div class="news-title">
+            <a
+              href="https://news.detik.com/berita/d-5165628/budayawan-jelaskan-soal-kakek-arteria-dahlan-pendiri-pki-sumbar?tag_from=wp_beritautama&_ga=2.44947812.1974748052.1599585526-434673850.1599585526"
+              target="_blank"
+              target="_blank"
+              >Budayawan Jelaskan soal 'Kakek Arteria Dahlan Pendiri PKI Sumbar'
+            </a>
+            <br />
+            <br />
+            <span>Rabu, 09 Sep 2020 11:52 WIB</span>
+          </div>
+        </div>
+        <div class="post-news">
+          <div class="post-image">
+            <div>
+              <img src="./image/news-bottom/4.jpeg" class="img" alt="post-4" />
+            </div>
+          </div>
+          <div class="news-title">
+            <a
+              href="https://hot.detik.com/red-carpet/d-5159838/pacar-cristiano-ronaldo-georgina-rodriguez-seksi-abis-di-venice-film-festival?_ga=2.259856842.1974748052.1599585526-434673850.1599585526"
+              target="_blank"
+              target="_blank"
+              >Pacar Cristiano Ronaldo, Georgina Rodriguez Seksi Abis di Venice
+              Film Festival
+            </a>
+            <br />
+            <br />
+            <span>Jumat, 04 Sep 2020 16:15 WIB</span>
+          </div>
+        </div>
+        <div class="post-news">
+          <div class="post-image">
+            <div>
+              <img src="./image/news-bottom/5.jpeg" class="img" alt="post-5" />
+            </div>
+          </div>
+          <div class="news-title">
+            <a
+              href="https://sport.detik.com/sepakbola/bola-dunia/d-5165627/ronaldo-aku-sudah-tak-perlu-buktikan-apapun-di-timnas-portugal?_ga=2.92124506.1974748052.1599585526-434673850.1599585526"
+              target="_blank"
+              target="_blank"
+              >Ronaldo: Aku Sudah Tak Perlu Buktikan Apapun di Timnas Portugal
+            </a>
+            <br />
+            <br />
+            <span>Jumat, 04 Sep 2020 16:15 WIB</span>
+          </div>
+        </div>
+        <div class="post-news">
+          <div class="post-image">
+            <div>
+              <img src="./image/news-bottom/6.jpeg" class="img" alt="post-6" />
+            </div>
+          </div>
+          <div class="news-title">
+            <a
+              href="https://travel.detik.com/travel-news/d-5165699/asyik-blitar-sudah-buka-32-situs-candi?_ga=2.25605757.1974748052.1599585526-434673850.1599585526"
+              target="_blank"
+              target="_blank"
+              >Asyik! Blitar Sudah Buka 32 Situs Candi
+            </a>
+            <br />
+            <br />
+            <span>Rabu, 09 Sep 2020 12:41 WIB</span>
+          </div>
+        </div>
+        <div class="post-news">
+          <div class="post-image">
+            <div>
+              <img src="./image/news-bottom/7.jpeg" class="img" alt="post-7" />
+            </div>
+          </div>
+          <div class="news-title">
+            <a
+              href="https://news.detik.com/berita-jawa-timur/d-5165651/sila-ke-4-pancasila-jadi-logo-pdip-saat-belajar-daring-dispendik-minta-maaf?_ga=2.11974132.1974748052.1599585526-434673850.1599585526"
+              target="_blank"
+              target="_blank"
+            >
+              Sila Ke-4 Pancasila Jadi Logo PDIP Saat Belajar Daring, Dispendik
+              Minta Maaf
+            </a>
+            <br />
+            <br />
+            <span>Rabu, 09 Sep 2020 12:41 WIB</span>
+          </div>
+        </div>
+        <div class="post-news">
+          <div class="post-image">
+            <div>
+              <img src="./image/news-bottom/8.jpeg" class="img" alt="post-8" />
+            </div>
+          </div>
+          <div class="news-title">
+            <a
+              href="https://oto.detik.com/otosport/d-5165692/seret-prestasi-honda-disebut-kembangkan-motor-hanya-untuk-marquez?_ga=2.50872041.1974748052.1599585526-434673850.1599585526"
+              target="_blank"
+              target="_blank"
+              >Seret Prestasi, Honda Disebut Kembangkan Motor Hanya untuk
+              Marquez
+            </a>
+            <br />
+            <br />
+            <span>Rabu, 09 Sep 2020 12:41 WIB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------- COMMENT BOX ------------------------ -->
+    <section class="comment-box">
+      <h3>Comment Box</h3>
+      <div class="wrapper">
+        <div class="commentBoxfloat">
+          <form id="cmnt">
+            <fieldset>
+              <div class="form_grp">
+                <label>comment</label>
+                <textarea
+                  id="userCmnt"
+                  placeholder="Kritik dan Saran Anda ..."
+                ></textarea>
+              </div>
+              <div class="form_grp">
+                <button type="button" id="submit">Submit</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div id="cmntContr"></div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------- FOOTER  --------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="about-me">
+          <h2>About Me</h2>
+          <p>
+            Hello, welcome to my blog. My name is Dwi Okta Hariyono. I am a new
+            Programming fullstack Javascript in Saltacademy. I was born in
+            Blitar, October 24th, 1994. My hobbies are hiking, gaming and
+            coding. If there is a competition, I would love to take part as long
+            as it relates to the world of authorship. It was my first step to
+            achieve my goal of becoming a famous programming. Yep, that’s all
+            that I can tell about myself. Thank you.
+          </p>
+        </div>
+        <div class="newslatter" id="contact">
+          <h2>Contact</h2>
+          <div class="form-element">
+            <span>Phone : 081 615 636 431</span>
+            <span>Email : oktayonker@gmail.com</span>
+          </div>
+        </div>
+        <div class="instagram">
+          <h2>Gallery</h2>
+          <div class="flex-row">
+            <img src="./image/gallery/20181006_134231.jpg" alt="insta-1" />
+            <img src="./image/gallery/20160817_092018.jpg" alt="iinsta-2" />
+            <img src="./image/gallery/IMG-20170118-WA0000.jpg" alt="insta-3" />
+            <img
+              src="./image/gallery/‪+62 858-5593-6235‬ 20180826_153514.jpg"
+              alt="insta-3"
+            />
+            <img src="./image/gallery/DSC_2575.JPG" alt="insta-3" />
+            <img src="./image/gallery/DSC_2555.JPG" alt="insta-3" />
+          </div>
+        </div>
+        <div class="follow" id="follow">
+          <h2>Follow</h2>
+          <p>Let me be Social</p>
+          <div>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://twitter.com/login?lang=id" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="right flex-row">
+        <h4 class="text">
+          Copyright ©2020 All right reserved | made by Dwi Okta Hariyono ®
+        </h4>
+      </div>
+    </footer>
+
+    <!-------------------------- JQUERY LIBRARY FILE ---------------------- -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- ----------------------- OWL CARAOUSEL JS ------------------------ -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------------------ JAVASCRIPT FILE ----------------------------->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
